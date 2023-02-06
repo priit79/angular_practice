@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { DogComponent } from './dog/dog.component';
+import { DoggiesDirective } from './doggies.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DogComponent
+    DogComponent,
+    DoggiesDirective
   ],
   imports: [
     BrowserModule
