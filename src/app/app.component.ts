@@ -29,7 +29,7 @@ export class AppComponent implements OnInit {
   }
 
   showAlertBox() {
-    alert("Woof! Woof!");
+    alert("Wof! Woof!");
   }
 
   addDog() {
