@@ -17,13 +17,13 @@ export class AppComponent implements OnInit {
   fruits = ["apple", "banana", "Strawberry", "Pineapple"]
 
   doggies: Dog[] = [];
-  dogNames: string[] = ['Caesar', 'Scooby', 'Shadow'];
+  dogNames: string[] = ['Potsa', 'Muki', 'Reks'];
 
   fetchDoggos(): Dog[] {
     let doggos: Dog[] = [];
 
-    doggos.push(new Dog('Jack', 'Dober', 'Runs faster'));
-    doggos.push(new Dog('Julie', 'German Shepperd', 'Eats'));
+    doggos.push(new Dog('Pontu', 'Dober', 'Runs faster'));
+    doggos.push(new Dog('Pitsu', 'German Shepperd', 'Eats'));
 
     return doggos;
   }
