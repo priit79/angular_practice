@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./dog.component.css']
 })
 export class DogComponent {
+  dogTitle: any;
+  doggies: any;
 
 }

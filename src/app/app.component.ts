@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     let doggos: Dog[] = [];
 
     doggos.push(new Dog('Pontu', 'Dober', 'Runs faster'));
-    doggos.push(new Dog('Pitsu', 'German Shepperd', 'Eats'));
+    doggos.push(new Dog('Pitsu', 'German Shepperd', 'Eats less'));
 
     return doggos;
   }

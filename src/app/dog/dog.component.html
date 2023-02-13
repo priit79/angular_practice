@@ -1,1 +1,7 @@
-<p>dog works!</p>
+<h2>{{ dogTitle }}</h2>
+<ul>
+  <li *ngFor="let dog of doggies">{{ dog.name }}</li>
+</ul>
+
+<app-dog-form></app-dog-form>
+
