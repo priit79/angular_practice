@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { DogComponent } from './dog/dog.component';
 import { DogFormComponent } from './dog-form/dog-form.component';
 import {FormsModule} from "@angular/forms";
+import {MatTableModule} from "@angular/material/table";
+import {MatButtonModule} from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    MatTableModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
