@@ -20,6 +20,10 @@
   </button>
 </div>
 
+<div id="catDiv">
+  <app-cat></app-cat>
+</div>
+
 <table mat-table [dataSource]="doggies" class="mat-elevation-z8 demo-table">
   <!-- Name Column -->
   <ng-container matColumnDef="name">
@@ -43,7 +47,6 @@
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
 
-
-
 <app-dog-form></app-dog-form>
+
 

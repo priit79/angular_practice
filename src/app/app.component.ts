@@ -20,6 +20,7 @@ export class AppComponent implements OnInit {
   dogNames: string[] = ['Potsa', 'Muki', 'Reks'];
   dogTitle = 'List of Dogs';
 
+
   fetchDoggos(): Dog[] {
     let doggos: Dog[] = [];
 
