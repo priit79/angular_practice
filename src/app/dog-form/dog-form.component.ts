@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Dog} from "../dog/shared/models/Dog";
+import {Dog} from "../shared/models/Dog";
 import {NgForm} from "@angular/forms";
 
 @Component({
@@ -19,4 +19,3 @@ export class DogFormComponent {
     dogForm.reset();
   }
 }
-

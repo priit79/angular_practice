@@ -10,7 +10,7 @@ describe('CatComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ CatComponent ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(CatComponent);
     component = fixture.componentInstance;

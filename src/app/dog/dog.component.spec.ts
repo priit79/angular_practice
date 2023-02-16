@@ -1,4 +1,4 @@
-  import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DogComponent } from './dog.component';
 
@@ -10,7 +10,7 @@ describe('DogComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [ DogComponent ]
     })
-    .compileComponents();
+      .compileComponents();
 
     fixture = TestBed.createComponent(DogComponent);
     component = fixture.componentInstance;

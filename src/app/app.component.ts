@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Dog} from "./dog/shared/models/Dog";
+import {Dog} from "./shared/models/Dog";
 
 @Component({
   selector: 'app-root',

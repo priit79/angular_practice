@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Cat} from "../../dog/shared/models/Cat";
+import {Cat} from "../shared/models/Cat";
 
 
 @Component({
@@ -11,8 +11,7 @@ export class CatComponent implements OnInit {
   cats: Cat[] = [];
 
 
-ngOnInit(): void {
-  this.cats.push(new Cat('Caesar', 'Persian', 'black'));
+  ngOnInit(): void {
+    this.cats.push(new Cat('Caesar', 'Persian', 'black'));
   }
 }
-
