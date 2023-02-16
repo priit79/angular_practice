@@ -3,6 +3,7 @@ export class Cat {
   type: string;
   color: string;
 
+
   constructor(name: string, type: string, color: string) {
     this.name = name;
     this.type = type;

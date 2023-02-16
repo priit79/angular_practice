@@ -1,3 +1,4 @@
+
 <!--
 <h2>{{ dogTitle }}</h2>
 <ul>
@@ -18,10 +19,6 @@
     class="demo-button">
     Remove data
   </button>
-</div>
-
-<div id="catDiv">
-  <app-cat></app-cat>
 </div>
 
 <table mat-table [dataSource]="doggies" class="mat-elevation-z8 demo-table">
@@ -46,6 +43,3 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 </table>
-
-<app-dog-form></app-dog-form>
-

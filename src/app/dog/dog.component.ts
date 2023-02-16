@@ -1,6 +1,4 @@
-
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
-// @ts-ignore
 import {Dog} from "../shared/models/Dog";
 import {MatTable} from "@angular/material/table";
 
@@ -10,18 +8,11 @@ import {MatTable} from "@angular/material/table";
   styleUrls: ['./dog.component.css']
 })
 export class DogComponent implements OnInit{
-  @Input() dogTitle: string = '';
-  @Input() doggies: Dog[] = [];
-
-
-
-
-
+  doggies: Dog[] = [];
   displayedColumns: string[] = ['name', 'type', 'property'];
 
-
   // @ts-ignore
-  @ViewChild(MatTable) table: MatTable<Dog>
+  @ViewChild(MatTable) table: MatTable<Dog>;
 
   addData() {
     const randomElementIndex = Math.floor(Math.random() * this.doggies.length);
@@ -34,8 +25,17 @@ export class DogComponent implements OnInit{
     this.table.renderRows();
   }
 
-
   ngOnInit(): void {
+    this.doggies = this.fetchDoggos();
+  }
+
+  fetchDoggos(): Dog[] {
+    let doggos: Dog[] = [];
+
+    doggos.push(new Dog('Jack', 'Dober', 'Runs faster'));
+    doggos.push(new Dog('Julie', 'German Shepperd', 'Eats well'));
+
+    return doggos;
   }
 
 }

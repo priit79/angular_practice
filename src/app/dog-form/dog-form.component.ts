@@ -13,6 +13,8 @@ export class DogFormComponent {
   name: string = '';
   type: string = '';
   property: string = '';
+  isShowForm: boolean = true;
+
 
   addDog(dogForm: NgForm) {
     this.dogs.push(new Dog(this.name, this.type, this.property));
